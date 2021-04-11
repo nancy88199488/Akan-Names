@@ -20,7 +20,7 @@ To access this project on your local files, you can clone it using these steps
 * Bootstrap
 * Javascript
 ### Live Site
-View [live](https://nancy88199488.github.io/Akan-Names/)
+View [live](https://nancy88199488.github.io/Akan-Names/
 ### Contacts
 Email:nancykemuntosalome@gmail.com
 ### BDD
