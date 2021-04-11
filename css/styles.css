@@ -1,0 +1,18 @@
+body {
+    background-color: sienna;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-style: italic;
+    
+}
+h1 {
+    text-align: center;
+    background-color: burlywood;
+}
+.row {
+    color: black;
+}
+.footer {
+    color: white;
+
+}

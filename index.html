@@ -4,68 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Akan Names</title>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
-<header>
-    <h1>Akan Name</h1>
-</header>
 <body>
-    <section>
-        <h3>What does it mean by <span>Akan Name?</span></h3>
-        <p>Akan names are derived from Ghanian culture. Frequently in Ghana,<br>
-             children are given their first name as a 'day name' which corresponds<br>
-              to the day in the week they were born.</p>
-
-              <p>Here are Ghanian day names:</p>
-              <div class="container">
-                  <h3 class="row" id="text">Male Names</h3>
-                  <ul class="col-4">
-                      <li>Sunday:Kwasi</li>
-                      <li>Monday:Kwadwo</li>
-                      <li>Tuesday:Kwabena</li>
-                      <li>Wednesday:Kwaku</li>
-                      <li>Thursday:Yaw</li>
-                      <li>Friday:Kofi</li>
-                      <li>Saturday:Kwame</li>
-                  </ul>
-                  <h3 class="row" id="text">Female Names</h3>
-                  <ul class="col-4">
-                     <li>Sunday:Akosua</li>
-                     <li>Monday:Adwoa</li>
-                     <li>Tuesday:Abenaa</li>
-                     <li>Wednesday:Akua</li>
-                     <li>Thursday:Yaa</li>
-                     <li>Friday:Afua</li>
-                     <li>Saturday:Ama</li>
-                  </ul>
-                </div>
-                <div class="col akan-name-form">
-                    <h4>Enter you birth details here:</h4>
-                    <form>
-                        <div class="form-group">
-                            <label for="birth">Date of birth</label>
-                            <input id="birth" class="form-control" type="date" placeholder="mm/dd/yyyy">
+    <div class="container">
+        <div class="jumbotron">
+            <header>
+                <h1>Akan Name</h1>
+            </header>
+        </div>
+       <div class="row">
+        <section>
+           <div class="col-md-4"> 
+            <h3>What does it mean by <span>Akan Name?</span></h3>
+            <p>Akan names are derived from Ghanian culture. Frequently in Ghana,<br><br>
+                 children are given their first name as a 'day name' which corresponds<br><br>
+                  to the day in the week they were born.</p>
+           </div>
+                 <div class="col-md-4">
+                    <p>Here are Ghanian day names:</p>
+                    <h3 id="text">Male Names</h3>
+                    <ul>
+                        <li>Sunday:Kwasi</li>
+                        <li>Monday:Kwadwo</li>
+                        <li>Tuesday:Kwabena</li>
+                        <li>Wednesday:Kwaku</li>
+                        <li>Thursday:Yaw</li>
+                        <li>Friday:Kofi</li>
+                        <li>Saturday:Kwame</li>
+                    </ul>
+                    <h3 class="row" id="text">Female Names</h3>
+                    <ul class="col-4">
+                       <li>Sunday:Akosua</li>
+                       <li>Monday:Adwoa</li>
+                       <li>Tuesday:Abenaa</li>
+                       <li>Wednesday:Akua</li>
+                       <li>Thursday:Yaa</li>
+                       <li>Friday:Afua</li>
+                       <li>Saturday:Ama</li>
+                    </ul>
+                 </div>
+                     <div class="col-md-4">
+                         <div class="form">
+                        <form class="myform" onsubmit="return getAkanName()">
+                            <label for="year-of-birth">
+                              Year:
+                              <input id="year-input" type="number" name="year-of-birth" placeholder="year-of-birth" value="" required>
+                            </label><br>
+                            <label for="month-of-birth">
+                              Month:
+                              <input id="month-input" type="number" name="month-of-birth" placeholder="month-of-birth" value="" required>
+                            </label><br>
+                            <label for="day-of-birth">
+                              Day:
+                              <input id="day-input" type="number" name="day-of-birth" placeholder="day-of-birth" value="" required>
+                            </label>
+                            <br>
+                            <label for="gender">
+                              <p>Please Select your gender: </p>
+                              Male
+                              <input id="male-input" type="radio" name="gender" value="male" required><br>
+                              Female
+                              <input id="female-input" type="radio" name="gender" value="female" required>
+                            </label>
+                            <br><br>
+                            <input class="button1" type="submit" name="" value="FIND YOUR AKAN NAME &#8594;">
+                            <br><br>
+                          </form>
+                          <form onsubmit="return clearInput()">
+                            <input class="button1" type="submit" value="RESET">
+                          </form>
+                            <h2 id = display-name><em>This is your Akan name is &darr;&darr;:</em></h2>
+                            <h1 id="result"></h1>
+                         </div>
+                    <footer>
+                        <div class="footer"> &copy 2021 by Nancy kemunto.All Rights Reserved.
                         </div>
-                </div>
-                            <div class="form-group">
-                                <label for="gender">Gender</label>
-                                <div class="radio">
-                                    <label for="male">Male</label>
-                                    <input id="male" class="form-control" type="radio">
-                                </div>
-                                <label for="female">Female</label>
-                                <input id="female" class="form-control" type="radio">
-                            </div>
-                                <button type="submit" onclick="findYourAkanName" class="btn btn-success">Find your Akan Name</button>
-                    </form>
-                </div>
-                <div class="your-akan-name">
-                    <p id="message" class="output"></p>
-                </div>
-                <footer>
-                    <div class="footer"> &copy 2021 by Nancy kemunto.All Rights Reserved.
-                    </div>
-                </footer>
-            
-    
+                    </footer>
+        </section>
+    </div>
+    <script src="./js/scripts.js"></script>
 </body>
 </html>
