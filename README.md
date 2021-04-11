@@ -21,9 +21,9 @@ To access this project on your local files, you can clone it using these steps
 * Javascript
 ### Live Site
 View [live](https://nancy88199488.github.io/Akan-Names/)
-### Licence &copy 2021.All Rights Reserved.
 ### Contacts
 Email:nancykemuntosalome@gmail.com
 ### BDD
-Inputs year,month,date and outputs day of the week you were born, like you put the day of the<br>
+Inputs year,month,date and outputs day of the week you were born, like you put the day of the week<br>
 and in return you get your Akan name
+### License
