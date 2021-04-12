@@ -3,6 +3,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     font-style: italic;
+    padding: 10px;
+    margin: 0 ;
+    border: 15px solid grey;
     
 }
 h1 {
