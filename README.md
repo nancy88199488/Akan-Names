@@ -27,3 +27,4 @@ Email:nancykemuntosalome@gmail.com
 Inputs year,month,date and outputs day of the week you were born, like you put the day of the week<br>
 and in return you get your Akan name
 ### License
+This project is under thr MIT license
