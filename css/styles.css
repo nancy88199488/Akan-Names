@@ -5,17 +5,18 @@ body {
     font-style: italic;
     padding: 10px;
     margin: 0 ;
-    border: 15px solid grey;
-    
+    border: 15px solid grey;   
 }
+
 h1 {
     text-align: center;
     background-color: burlywood;
 }
+
 .row {
     color: black;
 }
+
 .footer {
     color: white;
-
 }
